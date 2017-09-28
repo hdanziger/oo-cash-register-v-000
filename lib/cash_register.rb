@@ -23,7 +23,7 @@ attr_accessor :total, :items, :discount, :last_transaction
     if discount = 0
       "There is no discount to apply."
     else
-      self.total.round = self.total - (discount/100.0 * self.total)
+      self.total = self.total - (discount/100.0 * self.total)
       "After the discount, the total comes to #{self.total}."
     end
 
