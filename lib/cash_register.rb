@@ -18,8 +18,6 @@ attr_accessor :total, :items, :discount, :last_transaction
 
   def apply_discount
   discount = 20*0.01
-  self.total * discount = discount_total
-  discount_total
 end
 
 
