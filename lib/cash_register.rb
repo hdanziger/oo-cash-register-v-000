@@ -7,3 +7,5 @@ def initialize
   @total = 0
   #employee discount
 end
+
+end
