@@ -17,7 +17,11 @@ def add_item (title, price, quantity=1)
 end
 
 
+def apply_discount
 
 
+"After the discount, the total comes to #{$}."
 
+def void_last_transaction
+  self.total = self.total - self.last_transaction
 end
