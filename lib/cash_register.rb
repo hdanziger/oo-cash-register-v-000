@@ -17,11 +17,9 @@ attr_accessor :total, :items, :discount, :last_transaction
   end
 
   def apply_discount
-  discount = 20*0.01
-  self.total * discount = cash_register_with_discount
-  cash_register_with_discount.total
+    #100 discount is 5%. How do I figure out the new total?
+  total = total - (discount/100.0 * total)
 end
-
 
   def void_last_transaction
     self.total = self.total - self.last_transaction
