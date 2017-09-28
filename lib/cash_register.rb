@@ -1,11 +1,19 @@
 class CashRegister
 
-attr_accessor :cash_register, :total
+attr_accessor :total
 
-def initialize
-  @cash_register
+def initialize(discount=0)
   @total = 0
-  #employee discount
+  @discount = discount
+  @items = []
 end
+
+def add_item (title, price, quantity=1)
+  self.total = price * quantity
+  self.times do |item|
+
+
+
+
 
 end
