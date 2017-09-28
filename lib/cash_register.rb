@@ -18,6 +18,7 @@ attr_accessor :total, :items, :discount, :last_transaction
 
   def apply_discount
     #100 discount is 5%. How do I figure out the new total?
+    binding.pry
   total = total - (discount/100.0 * total)
 end
 
