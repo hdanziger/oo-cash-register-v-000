@@ -20,7 +20,13 @@ attr_accessor :total, :items, :discount, :last_transaction
 
   def apply_discount
     #100 discount is 5%. How do I figure out the new total?
-  self.total = self.total - (discount/100.0 * self.total)
+    if discount = 0
+      "There is no discount to apply."
+    else
+      self.total.round = self.total - (discount/100.0 * self.total)
+      "After the discount, the total comes to #{self.total}."
+    end
+
 end
 
   def void_last_transaction
